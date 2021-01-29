@@ -1,0 +1,199 @@
+$color-header: #F6D2D8;
+#header {
+  position: fixed;
+  height: 60px;
+  background-color:rgba(0, 0, 255, 0.1);
+  width: 60%;
+  right: 20%;
+  bottom: 0;
+  display: block;
+    .container .navbar ._Menus-show {
+      left: 0;
+      
+    }
+  }
+  .container {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   font-family: "dancing_script_otregular";
+   font-weight: bolder;
+   margin: auto;
+   margin-left: 3%;
+   
+  }
+  
+  .contact-mob{
+    padding-right: 20px;
+  }
+  .container .navbar {
+    display: flex;
+    flex: 1;
+    position: absolute;
+  }
+  
+  .container .navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .container .navbar ul li a {
+    text-decoration: none;
+    color: #F6D2D8;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: block;
+    width: 160px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    
+  }
+  
+  
+  .container .navbar ul li a:hover {
+    
+    background-color: transparent;
+    color: red;
+    width: 160px;
+    cursor: pointer;
+  }
+  
+  .container .navbar ul .close {
+    display: none;
+  }
+  
+  .container .navbar ul .close span {
+    font-size: 40px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .container .navbar .icon-bar {
+    padding: 10px 8px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right:10px ;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .container .navbar .icon-bar i {
+  
+    background-color: #ffffff;
+    height: 3px;
+  }
+
+  @media only screen and (max-width: 1112px) {
+    #header{
+      width: 70%;
+      right: 10%;
+    }
+    .container{
+      margin-left: 2%;
+    }
+  .container .navbar ul li a {
+    //display: inline;
+    padding-right: 10px;
+    font-size: 16px;
+    
+  }
+  .container .navbar ul  {
+    padding-left: 0px;
+  }
+ 
+    
+  }
+  
+  @media only screen and (max-width: 992px) {
+    #header{
+      width: 80%;
+    }
+    .container{
+      margin-left: -4%;
+    }
+  .container .navbar ul li a {
+    padding-right: 0px;
+  }
+  }
+  @media only screen and (max-width: 768px) {
+    #header{
+    background-color: transparent;
+    width: 70%;
+  }
+    .container .navbar ul li a:hover {
+      
+      background-color: transparent;
+      width: 100%;
+      cursor: pointer;
+      color: white;
+    }
+    
+    
+    .container {
+      justify-content: space-between;
+      height: 100%;
+    }
+  
+    .container .navbar {
+      flex: 0;
+    }
+  
+    .container .navbar ul {
+      position: fixed;
+      left: 100%;
+      top: -16px;
+      flex-direction: column;
+      justify-content: center;
+      background-color:#69001C;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+      transition: left 0.3s;
+    
+    }
+  
+    .container .navbar ul li a {
+      display:block;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      border-radius:10px ;
+      font-size: 18px;
+      color: #F6D2D8;
+      
+    }
+     
+    .container .navbar ul .close {
+      span{
+    border: none;
+  }
+       display: block;
+       position: absolute;
+       top:2vh;
+      right: 5px;
+       padding: 0px 50px;
+       color: #F6D2D8;
+        
+    }
+  
+    .container .navbar .icon-bar {
+     margin-left: -80%;
+      margin-top:-1050% ;
+      display: flex; 
+    }
+  
+  }
+
+  
+  

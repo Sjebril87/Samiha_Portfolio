@@ -1,0 +1,39 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import "tailwindcss/dist/tailwind.css";
+// @import "node_modules/bootstrap/scss/bootstrap";
+@import "./static/fonts/stylesheet.css";
+@import "./styles/header";
+@import "./styles/basic";
+@import "./styles/homepage";
+@import "./styles/about";
+@import "./styles/contact";
+@import "./styles/work";
+
+body{
+    display: block;
+    margin: 0;
+}
+body.loading{
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 100%;
+}
+.site-wrapper{
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: block;
+   
+}
+.site-main{
+    display: block;
+    font-family: "open_sansregular";
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+    width: 100%;
+}
