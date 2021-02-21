@@ -6,6 +6,7 @@ export const sectionHeader = `
                 <i></i>
                 <i></i>
                 <i></i>
+                
             </div>
 
             <ul id="nav-lists">

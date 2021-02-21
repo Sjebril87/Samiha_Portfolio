@@ -1,28 +1,121 @@
-#about{
-    background-color: rebeccapurple;
-   //background-position: center center;
+#about {
+  width: 100%;
+  height: 625px;
+  position: relative;
+  overflow: auto;
+}
+.container-about {
+  width: 100%;
+  height: 625px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.chapter_title {
+  background-color: #A33649;
+  width: 50%;
+  height: 625px;
+  background-size: cover;
+  .title{
+      font-family: $header-font;
+      color: #ffffff;
+      padding-top: 40%;
+      font-size: 4em;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+}
+.chapter_content {
+  background-color:#ffffff;
+  width: 50%;
+  height: 100vh;
+  background-size: cover;
+ color: black;
+
+
+.paragraphe1{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border: 3px solid bold rgb(22, 22, 22);
+  font-family: $main-font;
+  text-align: left;
+  margin-top: 3%;
+  border-radius: 3%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-left: 5%;
+  background-color: rgb(238, 231, 231);
+}
+.paragraphe2{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  font-family: $main-font;
+  text-align: left;
+  border-radius: 3%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+  margin-left: 50%;
+  background-color: rgb(238, 231, 231);
+}
+}
+@media only screen and (max-width: 1125px) {
+  .chapter_content {
+  .paragraphe2{
+    margin-left: 35%;
+    
+  }
+}
+}
+@media only screen and (max-width: 992px) {
+  .container-about {
     width: 100%;
     height: 625px;
-    position: relative;
-    overflow: hidden;
     display: block;
-    z-index: 200;
+    
+  .chapter_title {
+    width: 100%;
+        .title{
+            padding-top: 50%;
+        }
+  }
+  .chapter_content {
+    width: 100%;
+    overflow: auto;
+    .paragraphe2{
+      margin-left: 50%;
+      
+    }
+  }
+
 }
 
-.div{
+}
+@media only screen and (max-width: 768px) {
+  .container-about {
+    width: 100%;
+    height: 625px;
     display: block;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    overflow: scroll;
+    
+  .chapter_title {
+    width: 100%;
+        .title{
+            padding-top: 50%;
+        }
+  }
+  .chapter_content {
+    width: 100%;
+    
+    .paragraphe1{
+      margin-left: 5%;
+      margin-top: 10px;
+    }
+    .paragraphe2{
+      margin-left: 5%;
+      margin-top: 10px;
+    }
+  }
 
 }
-
-.test{
-    display: block;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
 }
