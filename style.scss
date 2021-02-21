@@ -9,10 +9,7 @@
 @import "./styles/contact";
 @import "./styles/work";
 
-body{
-    display: block;
-    margin: 0;
-}
+
 body.loading{
     overflow: auto;
     overflow-x: auto;
@@ -37,3 +34,10 @@ body.loading{
     font-style: normal;
     width: 100%;
 }
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
